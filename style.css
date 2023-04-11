@@ -2,3 +2,68 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* justify-content: space-between; */
+    /* height: 100vh; */
+    /* background-color: aqua; */
+}
+
+header {
+    align-items: center;
+    background-color: #ccc;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 4%;
+    flex-grow: 0;
+}
+
+/* main {
+    display: flex;
+    flex-grow: 2;
+    /* background-color: aqua; 
+}*/
+
+main {
+    align-items: center;
+    display: flex;
+    column-gap: 8px;
+    row-gap: 8px;
+    justify-content: center;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+}
+
+main section {
+    width: 160px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+main section figure img {
+    width: 160px;
+}
+
+main section p {
+    background-color: black;
+    color: white;
+}
+
+aside {
+    background-color: blueviolet;
+    width: 500px;
+}
+
+footer {
+    flex-grow: 0;
+    align-items: center;
+    background-color: #ccc;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+}
